@@ -1,0 +1,36 @@
+{
+  "name": "mediacon",
+  "version": "1.0.1",
+  "build": {
+    "publish": [{
+      "provider": "github",
+      "owner": "bkrajendra",
+      "repo": "mediacon"
+    }],
+    "appId": "in.iocare.mediacon",
+    "mac": {
+      "category": "in.iocare.mediacon"
+    }
+  },
+  "description": "Media Transcoder",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder build",
+    "publish": "electron-builder build --win -p always",
+    "dist": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rajendra Khope",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.6",
+    "electron-builder": "^22.10.5"
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.8",
+    "jquery": "^3.6.0",
+    "random-string": "^0.2.0"
+  }
+}
